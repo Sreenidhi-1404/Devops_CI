@@ -38,4 +38,4 @@ DevOps_CI_24BCS280/
 ├── .gitignore
 └── Jenkinsfile
 ## Recent Update
-The transport system now validates bus capacity before allocating students.
+The transport system verifies bus capacity before assigning students.
