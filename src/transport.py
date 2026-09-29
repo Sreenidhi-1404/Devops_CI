@@ -19,7 +19,9 @@ class Bus:
 
     def is_full(self):
         return len(self.students) >= self.capacity
-
+    
+    def get_available_seats(self):
+        return self.capacity - len(self.students)
 
 class TransportAllocation:
 
