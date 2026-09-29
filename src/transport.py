@@ -24,6 +24,8 @@ class Bus:
         return self.capacity - len(self.students)
     def get_student_count(self):
         return len(self.students)
+    def has_available_seat(self):
+        return len(self.students) < self.capacity
 
 class TransportAllocation:
 

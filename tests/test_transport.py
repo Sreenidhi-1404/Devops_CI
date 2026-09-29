@@ -35,6 +35,14 @@ class TestBus(unittest.TestCase):
 
         self.assertTrue(bus.add_student(student1))
         self.assertFalse(bus.add_student(student2))
+    def test_has_available_seat(self):
+        bus = Bus("B04", 2)
+
+        student = Student("S004", "Kavin")
+
+        bus.add_student(student)
+
+        self.assertTrue(bus.has_available_seat())
 
 
 class TestTransportAllocation(unittest.TestCase):
